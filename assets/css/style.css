@@ -46,12 +46,30 @@ nav a:active {
     border-bottom: 10px solid;
     border-color: var(--dark-color);
 }
-}
 
 nav a:focus {
     color: var(--medium-color);
     border-color: rgb(167, 6, 145);
 }
+
+#about-me-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+#about-me-container h2 { 
+ padding-right: 100px;
+}
+
+#about-me p {
+    align-items: right;
+}
+
+/* #work-container {
+    display: inline;
+    position: relative;
+} */
 
 .work-cards {
     display: flex;
@@ -66,17 +84,44 @@ nav a:focus {
     margin: 5px 5px 5px 5px;
 }
 
+#contact-container { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #000;
+    padding-bottom: 30px;
+}
+
+#contact-container h2 { 
+ padding-right: 100px;
+}
+
+label {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+}
 
 input {
-    display: block;
     margin-bottom: 10px;
-    width: 250px;
+    width: 300px;
     padding: 12px 20px;
 }
 
 #message {
     width: 40%;
+    min-width: 300px;
     padding-bottom: 150px;
+}
+
+button {
+    background-color: var(--medium-color);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 82px;
 }
 
 footer {
@@ -96,5 +141,13 @@ footer a {
     header {
       flex-direction: column;
     }
+
+    #contact-container {
+        flex-direction: column;
+    }
+
+    #contact-container h2 { 
+        padding-right: 0px;
+       }
 }
   
