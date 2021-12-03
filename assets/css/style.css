@@ -10,7 +10,7 @@
 body {
     display: flex;
     flex-direction: column;
-    background-image: url(../images/light-clouds.jpeg);
+    background-color: var(--light-color);
     color: var(--dark-color);
     font-family: Noto Sans, sans-serif;
 }
@@ -59,9 +59,6 @@ nav a:focus {
     margin: 5px 5px 5px 5px;
 }
 
-#project-1 {
-    background-image: url(../images/single-clouds.jpeg);
-}
 
 input {
     display: block;
