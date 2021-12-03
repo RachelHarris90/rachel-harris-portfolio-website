@@ -1,0 +1,68 @@
+:root {
+    --light-color: #e8C7C8;
+    --medium-color: rgb(102, 2, 97);
+    --dark-color: #00004d;
+}
+
+body {
+    background: var(--light-color);
+    color: var(--dark-color);
+    font-family: Noto Sans, sans-serif;
+}
+
+header {
+    padding-bottom: 20px;
+    border-bottom: 1px dashed;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+nav {
+    display: flex;
+    margin-top: 18px;
+}
+
+nav a {
+    padding: 14px 20px;
+}
+
+nav a:hover {
+    color: 
+}
+
+main {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+/* section {
+
+
+}
+
+.about-me {
+
+}
+
+.work {
+
+
+}
+
+.contact {
+
+}
+
+form {
+
+} */
+
+footer a {
+    color: var(--dark-color);
+    text-decoration: none;
+}
