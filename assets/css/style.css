@@ -35,7 +35,6 @@ nav ul {
 
 nav a {
     text-decoration: none;
-
 }
 
 nav a:hover {
@@ -48,10 +47,8 @@ nav a:focus {
 }
 
 .work-cards {
-    box-sizing: border-box;
     display: flex;
-    flex-wrap: wrap;  
-    flex-direction: row;
+    flex-wrap: wrap; 
 }
 
 .card {
@@ -59,11 +56,13 @@ nav a:focus {
     border-color: white;
     border-width: 5px;
     padding: 10px;
-    flex: 0 0 400px;
-    margin: 25px 15px 15px 15px;
+    margin: 5px 5px 5px 5px;
 }
 
-/* TODO */
+#project-1 {
+    background-image: url(../images/single-clouds.jpeg);
+}
+
 input {
     display: block;
     margin-bottom: 10px;
@@ -72,21 +71,27 @@ input {
 }
 
 #message {
-    width: 400px;
+    width: 40%;
     padding-bottom: 150px;
 }
 
-footer a {
-    color: var(--dark-color);
-    text-decoration: none;
+footer {
+    background: var(--dark-color);
+    margin-top: 20px;
+    padding: 20px;
 }
 
-@media screen and (max-width: 768px) {
+footer a {
+    color: var(--light-color);
+    text-decoration: none;
+    flex-wrap: wrap;  
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 992px) {
     header {
       flex-direction: column;
     }
+}
   
-    main {
-      max-width: 1200px;
-    }
-  }
