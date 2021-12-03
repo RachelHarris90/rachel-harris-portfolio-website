@@ -10,7 +10,7 @@
 body {
     display: flex;
     flex-direction: column;
-    background: var(--light-color);
+    background-image: url(../images/light-clouds.jpeg);
     color: var(--dark-color);
     font-family: Noto Sans, sans-serif;
 }
@@ -47,22 +47,6 @@ nav a:focus {
     border-color: rgb(167, 6, 145);
 }
 
-main {
-    border-style: border-box;
-    display: flex;
-    flex-direction: column;
-}
-
-/* TODO */
-#about-me {
-
-}
-
-/* TODO */
-#work-heading {
-
-}
-
 .work-cards {
     box-sizing: border-box;
     display: flex;
@@ -80,13 +64,16 @@ main {
 }
 
 /* TODO */
-#contact {
-
+input {
+    display: block;
+    margin-bottom: 10px;
+    width: 250px;
+    padding: 12px 20px;
 }
 
-/* TODO */
-form {
-
+#message {
+    width: 400px;
+    padding-bottom: 150px;
 }
 
 footer a {
