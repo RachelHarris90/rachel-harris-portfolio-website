@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Rachel's Developer Portfolio</title>
     <link rel="stylesheet" href="./assets/css/style.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat">
 </head>
 
 <body>
@@ -11,9 +12,9 @@
         <h1>Rachel's Developer Portfolio</h1>
         <nav>
             <ul>
-                <li><a href="index.html#about-me">About me</a></li>
-                <li><a href="index.html#work-heading">Work</a></li>
-                <li><a href="index.html#contact">Contact me</a><li>
+                <li><a href="index.html#about-me-container">About me</a></li>
+                <li><a href="index.html#work-heading-container">Work</a></li>
+                <li><a href="index.html#contact-container">Contact me</a><li>
             </ul>
         </nav>
     </header>
@@ -26,43 +27,62 @@
             </p>
         </section>
 
-        <section id="work-container">
-            <section id="work-heading">
-                <h2>Work</h2>
-            </section>
-
-            <section class="work-cards">
-                <div class="card">
-                    <h3>Project 1</h3>
-                    <p>Description of project 1</p>
+        <section class="work-container">
+            <div class="work-column">
+              <figure class="card work-card">
+                <h2 class="work-header">Flexbox Row</h2>
+                <div class="work-body">
+                  <p>Use these three properties to create a Flexbox row layout.</p>
                 </div>
+              </figure>
+            </div>
 
-                <div class="card">
-                    <h3>Project 2</h3>
-                    <p>Description of project 2</p>
+            <div class="work-column">
+              <figure class="card work-card">
+                <h2 class="work-header">Flexbox Column</h2>
+                <div class="work-body">
+                  <p>Use this to create a Flexbox column layout.</p>
                 </div>
+              </figure>
+            </div>
+      
+            <div class="work-column">
+              <figure class="card work-card">
+                <h2 class="work-header">CSS Grid Layout</h2>
+                <div class="work-body">
+                  <p>Build a 12-column layout using CSS Grid</p>
+                </div>
+              </figure>
+            </div>
 
-                <div class="card">
-                    <h3>Project 3</h3>
-                    <p>Description of project 3</p>
+            <div class="work-column">
+              <figure class="card work-card">
+                <h2 class="work-header">Linear Gradients</h2>
+                <div class="work-body">
+                  <p>This will create a background linear gradient from top to bottom.</p>
                 </div>
+              </figure>
+            </div>
 
-                <div class="card">
-                    <h3>Project 4</h3>
-                    <p>Description of project 4</p>
+            <div class="work-column">
+              <figure class="card work-card">
+                <h2 class="work-header">Box Transition Glow</h2>
+                <div class="work-body">
+                  <p>Use transition and box shadows to glow on hover.</p>
                 </div>
-
-                <div class="card">
-                    <h3>Project 5</h3>
-                    <p>Description of project 5</p>
+              </figure>
+            </div>
+      
+            <div class="work-column">
+              <figure class="card work-card">
+                <h2 class="work-header">Overlay Card with Title</h2>
+                <div class="work-body">
+                  <p>Use position properties and negative margins to raise elements higher than their natural starting point.
+                  </p>
                 </div>
-
-                <div class="card">
-                    <h3>Project 6</h3>
-                    <p>Description of project 6</p>
-                </div>
-            </section>
-        </section>
+              </figure>
+            </div>
+          </section>
 
         <section id="contact-container">
             <h2>Contact me</h2>
