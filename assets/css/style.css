@@ -3,66 +3,92 @@
     --medium-color: rgb(102, 2, 97);
     --dark-color: #00004d;
 }
+* {
+    box-sizing: border-box;
+  }
 
 body {
+    display: flex;
+    flex-direction: column;
     background: var(--light-color);
     color: var(--dark-color);
     font-family: Noto Sans, sans-serif;
 }
 
 header {
-    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border-bottom: 1px dashed;
-    display: inline-flex;
-    flex-wrap: wrap;
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 200%;
 }
 
-nav {
+nav ul {
     display: flex;
-    margin-top: 18px;
+    justify-content: space-between;
+    min-width: 300px;
+    list-style: none;
 }
 
 nav a {
-    padding: 14px 20px;
+    text-decoration: none;
+
 }
 
 nav a:hover {
-    color: 
+    color: var(--medium-color);
+}
+
+nav a:focus {
+    color: var(--medium-color);
+    border-color: rgb(167, 6, 145);
 }
 
 main {
-    box-sizing: border-box;
+    border-style: border-box;
     display: flex;
     flex-direction: column;
 }
 
-/* section {
-
-
-}
-
-.about-me {
+/* TODO */
+#about-me {
 
 }
 
-.work {
-
-
-}
-
-.contact {
+/* TODO */
+#work {
 
 }
 
+/* TODO */
+.card {
+
+}
+
+/* TODO */
+#contact {
+
+}
+
+/* TODO */
 form {
 
-} */
+}
 
 footer a {
     color: var(--dark-color);
     text-decoration: none;
 }
+
+@media screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+    }
+  
+    main {
+      max-width: 1200px;
+    }
+  }
