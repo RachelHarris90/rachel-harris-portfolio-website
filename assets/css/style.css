@@ -229,6 +229,7 @@ footer a {
         padding-top: 20px;
     }
 
+    
     #contact-container h2 { 
         padding-right: 0px;
        }
@@ -249,10 +250,3 @@ footer a {
       flex-grow: 1;
     }
   }
-
-@media screen and (min-width: 992px) {
-    .work-column {
-        flex: 0 0 33.333%;
-        max-width: 33.333%;
-    }
-}
