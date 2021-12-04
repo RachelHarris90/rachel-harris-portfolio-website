@@ -1,13 +1,16 @@
+/* Set most common colours as variables */
 :root {
     --light-color: #e8C7C8;
     --medium-color: rgb(102, 2, 97);
     --dark-color: #00004d;
 }
+
 * {
     box-sizing: border-box;
     margin: 0;
   }
 
+  /* Set structure of page, background and default font colour */
 body {
     display: flex;
     flex-direction: column;
@@ -15,6 +18,8 @@ body {
     color: var(--dark-color);
 }
 
+/* Header bar */
+/* Set position as fixed to make header sticky. Layout header with heading & nav items sitting in the center of row and set space between them */
 header {
     display: flex;
     justify-content: space-between;
@@ -25,49 +30,62 @@ header {
     background: var(--dark-color);
 }
 
+/* Headings throughout page */
+
+/* Set font for headings, nav, field labels and about me paragraph text to Caveat */
+h1, h2, h3, nav, #about-me-container p, label {
+    font-family: caveat;
+}
+
+/* Set h1 heading to have a light colour (it's on a dark background), large font and be positioned on the left size */
 h1 {
     font-size: 250%;
     margin-left: 20px;
     color: var(--light-color);
 }
 
+/* Set font size of h2 headings to be larger than the default */
 h2 {
     font-size: 180%;
 }
 
-h1, h2, h3, nav {
-    font-family: caveat;
-}
-
+/* Navigation items */
+/* Set nav items to sit nicely side-by-side and without bullet list*/
 nav ul {
     display: flex;
     justify-content: space-between;
     min-width: 300px;
     list-style: none;
+    padding: 20 10 20 10;
 }
 
+/* Remove underline of nav items (links to anchors) and change font size/colour */
 nav a {
     text-decoration: none;
-    padding: 20 10 20 10;
     font-size: 130%;
     color: var(--light-color);
 }
 
+/* Set line underneath nav item when hovering (using border-bottom) */
 nav a:hover {
     border-bottom: 10px solid;
     border-color: var(--medium-color);
 }
 
-nav a:active {
-    border-bottom: 10px solid;
-    border-color: var(--dark-color);
-}
-
+/* Change colour of line underneath nav item when it's being clicked or pressed */
 nav a:focus {
     border-bottom: 10px solid;
     border-color: white;
 }
 
+/* Set line underneath nav item after it's been clicked (using border-bottom) */
+nav a:active {
+    border-bottom: 10px solid;
+    border-color: var(--dark-color);
+}
+
+
+/* About me section */
 #about-me-container {
     display: flex;
     flex-direction: row;
@@ -78,16 +96,19 @@ nav a:focus {
 }
 
 #about-me-container p {
-    font-family: caveat;
     font-size: 300%;
     width: 50%;
 }
 
+/* Convert photo into a circle */
 #about-me-container img {
     border-radius: 50%;
     width: 20%;
     flex: 0 0 50px;
 }
+
+
+/* Work section */
 
 .work-container {
     display: flex;
@@ -136,6 +157,7 @@ nav a:focus {
     border-color: white;
 }
 
+/* Contact me section */
 
 #contact-container { 
     display: flex;
@@ -153,18 +175,16 @@ label {
     display: inline-block;
     position: relative;
     width: 100%;
-    font-family: caveat;
     font-size: 150%;
 }
 
 input {
     margin-bottom: 10px;
-    width: 300px;
+    width: 100%;
     padding: 12px 20px;
 }
 
 #message {
-    width: 40%;
     min-width: 300px;
     padding-bottom: 150px;
 }
@@ -195,15 +215,27 @@ footer a {
       flex-direction: column;
     }
 
-    #contact-container h2 { 
-        padding-right: 0px;
-       }
+    header {
+        height: 180px;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 400%;
+    }
 
     #about-me-container p {
         font-size: 180%;
         padding-top: 20px;
     }
 
+    #contact-container h2 { 
+        padding-right: 0px;
+       }
+
+    form {
+        width: 95%;
+    }
 }
   
 
