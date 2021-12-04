@@ -175,7 +175,8 @@ label {
 input {
     margin-bottom: 10px;
     width: 100%;
-    padding: 12px 250px;
+    padding: 12px;
+    padding-right: 300px;
 }
 
 #message {
@@ -194,14 +195,17 @@ button {
 
 footer {
     background: var(--dark-color);
-    margin-top: 20px;
     padding: 20px;
     text-align: center;
+    font-family: caveat;
 }
 
 footer a {
     color: var(--light-color);
     text-decoration: none;
+    align-content: center;
+    padding: 20px;
+    font-size: 200%;
 }
 
 @media screen and (max-width: 992px) {
