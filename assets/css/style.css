@@ -118,7 +118,7 @@ nav a:focus {
     background: whitesmoke;
     padding: 80px;
     border: 10px;
-    box-shadow: 5px 10px lightgrey;
+    box-shadow: 5px 5px 5px #aaaaaa;
 }
 
 .card:hover {
@@ -176,7 +176,6 @@ button {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    margin-left: 82px;
 }
 
 footer {
