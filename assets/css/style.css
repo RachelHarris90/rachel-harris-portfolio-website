@@ -109,6 +109,11 @@ nav a:active {
 
 /* Work section */
 
+#work-heading {
+    color: var(--dark-color);
+    font-size: 400%;
+}
+
 .work-container {
     display: flex;
     flex-wrap: wrap;
@@ -120,6 +125,18 @@ nav a:active {
 .work-column {
     flex: 1 0 32%;
     padding: 4px 10px;
+    margin-top: 10px;
+}
+
+.work-card h2 {
+    background-image: linear-gradient(to right, var(--dark-color), var(--medium-color));
+    color: white;
+    padding: 2px;
+    margin-bottom: 5px;
+}
+
+.work-card p {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .work-card {
@@ -127,26 +144,23 @@ nav a:active {
     flex-direction: column;
     justify-content: flex-start;
     min-height: 100%;
-}
-
-.card {
     background: whitesmoke;
     padding: 80px;
     border: 10px;
-    box-shadow: 5px 5px 5px #aaaaaa;
+    box-shadow: 10px 10px 10px #aaaaaa;
 }
 
-.card:hover {
+.work-card:hover {
     border-left: 10px solid;
     border-color: var(--medium-color);
 }
 
-.card:active {
+.work-card:active {
     border-left: 10px solid;
     border-color: var(--dark-color);
 }
 
-.card:focus {
+.work-card:focus {
     border-left: 10px solid;
     border-color: white;
 }
@@ -209,7 +223,7 @@ footer a {
 }
 
 @media screen and (max-width: 992px) {
-    header, #about-me-container, #work-container, #contact-container {
+    header, #about-me-container, #contact-container {
       flex-direction: column;
     }
 
@@ -240,7 +254,7 @@ footer a {
 }
 
 @media screen and (max-width: 768px) {
-    header, #about-me-container, #work-container, #contact-container {
+    header, #about-me-container, #contact-container {
         flex-direction: column;
       }
   
