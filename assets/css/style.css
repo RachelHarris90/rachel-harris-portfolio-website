@@ -7,6 +7,7 @@
 }
 * {
     box-sizing: border-box;
+    margin: 0;
   }
 
 body {
@@ -22,9 +23,7 @@ header {
     align-items: center;
     position: fixed;
     width: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
+    height: 120px;
     background: var(--dark-color);
 }
 
@@ -86,7 +85,6 @@ nav a:focus {
     align-items: right;
 }
 
-
 .work-container {
     display: flex;
     flex-wrap: wrap;
@@ -113,11 +111,10 @@ nav a:focus {
 }
 
 .card {
-    border-style: dotted;
-    border-color: white;
-    border-width: 5px;
+    background: whitesmoke;
     padding: 10px;
-    margin: 5px 5px 5px 5px;
+    border: 10px;
+    box-shadow: lightgrey;
 }
 
 #contact-container { 
@@ -183,6 +180,7 @@ footer a {
     #contact-container h2 { 
         padding-right: 0px;
        }
+    
 }
   
 
