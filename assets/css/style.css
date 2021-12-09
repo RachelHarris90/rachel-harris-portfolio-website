@@ -20,7 +20,7 @@ body {
 }
 
 /* Header bar */
-/* Layout header with heading & nav items sitting in the center of row and set space between them */
+/* Layout header with heading & nav items sitting in the center of row and set space between them */ 
 header {
     display: flex;
     justify-content: space-between;
@@ -115,7 +115,7 @@ nav a:active {
 
   aside {
     flex: 1;
-    padding: 80px;
+    padding: 30px;
     text-align: center;
 }
 
@@ -142,9 +142,9 @@ nav a:active {
 .work-card {
     background: whitesmoke;
     padding: 80px;
-    border: 10px;
+    /* border: 10px; */
     box-shadow: 10px 10px 10px #aaaaaa;
-    min-width: 300px
+    flex-basis: 0;
 }
 
 .work-card:nth-of-type(1) {
