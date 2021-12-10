@@ -40,7 +40,7 @@ The website can be viewed in [Github pages](https://rachelharris90.github.io/rac
 The author of this repo is Rachel Harris, a student of Trilogy Developer Bootcamp.
 
 ## License
-Distributed under the MIT License. See LICENSE.txt for more information.
+Not licensed.
 
 
 ## Tests
