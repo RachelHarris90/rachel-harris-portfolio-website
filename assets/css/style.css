@@ -50,13 +50,16 @@ h2 {
 }
 
 /* Navigation items */
+
+nav {
+    width: 40%;
+}
+
 /* Set nav items to sit nicely side-by-side and without bullet list*/
 nav ul {
     display: flex;
     justify-content: space-between;
-    min-width: 300px;
     list-style: none;
-    padding: 20 10 20 10;
 }
 
 /* Remove underline of nav items (links to anchors) and change font size/colour */
@@ -192,13 +195,32 @@ footer a {
     }
 
     header {
-        height: 180px;
+        height: 200px;
         justify-content: center;
+        align-
+    }
+
+    h1, h2, h3 {
+        font-size: 300%;
+    }
+
+    h3 {
+        font-size: 300%;
+    }
+    
+    li {
+       font-size: 150%; 
     }
 
     #about-me-container p {
-        font-size: 180%;
         padding-top: 20px;
+        font-size: 300%;
     }
+
+    nav {
+        width: 80%;
+
+    }
+    
 
 }
