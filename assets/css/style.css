@@ -152,6 +152,11 @@ nav a:active {
     width: 100%;
 }
 
+.site-images {
+    height: 50%;
+    width: 100%;
+}
+
 .button { 
     background-color: var(--medium-color);
     color: white;
