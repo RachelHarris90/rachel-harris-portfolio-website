@@ -68,7 +68,7 @@ nav ul {
 }
 
 /* Remove underline of nav items (links to anchors) and change font size/colour */
-nav a {
+nav a, a  {
     text-decoration: none;
     font-size: 130%;
     color: var(--light-color);
