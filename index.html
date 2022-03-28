@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <title>Rachel's Developer Portfolio</title>
     <link rel="stylesheet" href="./assets/css/style.css"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 </head>
 
 <body>
     <header>
-        <h1>Rachel's Development Portfolio</h1>
+        <h1 href="./index.html">Rachel's Development Portfolio</h1>
         <nav>
             <ul>
                 <!-- Anchor to sections within the page (About me/Work/Contact me) -->
-                <li><a href="index.html#about-me-container">About me</a></li>
-                <li><a href="index.html#work-container">My work</a></li>
-                <li><a href="index.html#contact-container">Contact me</a><li>
+                <li><a href="./about.html">About me</a></li>
+                <li><a href="./work.html">My work</a></li>
+                <li><a href="mailto:rachel.harris@msn.com">Contact me</a><li>
             </ul>
         </nav>
     </header>
@@ -23,70 +23,15 @@
     <main>
         <!-- About me section with photo and blurb -->
         <section id="about-me-container">
-            <img src="./assets/images/rachel-harris-portrait.jpeg" alt="Rachel Harris portrait photo" />
-            <p>
-                Hi, I'm Rachel. Welcome to my portfolio!
-                <br><br>
-                I've been working with software since 2010. I've worked as Business Analyst, Product Manager, Development Lead and currently work as a Delivery Lead for an Australian tech company.
-                <br><br>
-                I love how scalable software is and how we can use it to solve problems and create opportunities for people and organisations.
-                <br><br>
-                Now I'm learning how to code in a 24 week long coding bootcamp, to enable myself to become more self-sufficient and to open up more opportunities for my future. 
-                <br><br>
-                Have a look around and reach out if anything here interests you.
-            </p>
-        </section>
-
-        <div id="work-container">
-            <div id="work-header">
-                <h2>My work</h2>
-            </div>
-            
-            <section class="work-sections">
-
-                <figure class="work-card">
-                    <h3>Cooped up cooking (recipe finder)</h3>
-                    <img class="site-images" src="./assets/images/cooped-up-cooking.png" alt="Cooped up cooking site" />
-                    <a class="button" href="https://oliverlkelly.github.io/cooped-up-cooking/">Site</a>
-                    <a class="button" href="https://github.com/oliverlkelly/cooped-up-cooking">Repo</a>
-                </figure>
-
-                <figure class="work-card">
-                    <h3>Australian geography quiz (coding quiz)</h3>
-                    <img class="site-images" src="./assets/images/coding-quiz.png" alt="Coding quiz site" />
-                    <a class="button" href="https://rachelharris90.github.io/coding-quiz/">Site</a>
-                    <a class="button" href="https://github.com/RachelHarris90/coding-quiz">Repo</a>
-                </figure>
-
-                <figure class="work-card">
-                    <h3>Day scheduler (calendar app)</h3>
-                    <img class="site-images" src="./assets/images/work-day-scheduler.png" alt="Day scheduler site" />
-                    <a class="button" href="https://rachelharris90.github.io/calendar-app/">Site</a>
-                    <a class="button" href="https://github.com/RachelHarris90/calendar-app">Repo</a>
-                </figure>
-
-                <figure class="work-card">
-                    <h3>Weather dashboard</h3>
-                    <img class="site-images" src="./assets/images/weather-dashboard.png" alt="Weather dashboard site"/>
-                    <a class="button" href="https://rachelharris90.github.io/weather-dashboard/">Site</a>
-                    <a class="button" href="https://github.com/RachelHarris90/weather-dashboard">Repo</a>
-                </figure>
-
-                <figure class="work-card">
-                    <h3>Horiseon website</h3>
-                    <img class="site-images" src="./assets/images/horiseon-website.png" alt="Horiseon website"/>
-                    <a class="button" href="https://rachelharris90.github.io/horiseon-website/">Site</a>
-                    <a class="button" href="https://github.com/RachelHarris90/horiseon-website">Repo</a>
-                </figure>
-
-            </section>
-        </div>
+            <img id="portrait-image" src="./assets/images/rachel-harris-portrait.jpeg" alt="Rachel Harris portrait photo" />
+            <h3 id="welcome-message">Hi, I'm Rachel. Welcome to my portfolio!</h3>
+                
     </main>
 
     <footer id="contact-container">
-        <a href="https://github.com/rachelharris90">Github</a>
-        <a href="https://www.linkedin.com/in/harrislrachel/">LinkedIn</a>
-        <a href="./assets/files/Rachel Harris Resume.pdf">Resume</a>
+        <a class="footer-item" href="https://github.com/rachelharris90">Github</a>
+        <a class="footer-item" href="https://www.linkedin.com/in/harrislrachel/">LinkedIn</a>
+        <a class="footer-item" href="./assets/files/Rachel Harris Resume.pdf">Resume</a>
     </footer>
 
 </body>
